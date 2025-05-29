@@ -8,13 +8,20 @@ import BookCoverSvg from "./BookCoverSvg";
 // import { IKImage } from "imagekitio-next";
 // import config from "@/lib/config";
 
-type BookCoverVariant = "extraSmall" | "small" | "medium" | "regular" | "wide";
+type BookCoverVariant =
+  | "extraSmall"
+  | "small"
+  | "default"
+  | "medium"
+  | "regular"
+  | "wide";
 
 const variantStyles: Record<BookCoverVariant, string> = {
   extraSmall: "book-cover_extra_small",
   small: "book-cover_small",
   medium: "book-cover_medium",
   regular: "book-cover_regular",
+  default: "book-cover",
   wide: "book-cover_wide",
 };
 
